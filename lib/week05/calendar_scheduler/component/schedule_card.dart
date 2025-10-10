@@ -24,7 +24,11 @@ class _Time extends StatelessWidget{
       children: [
         Text(
          // 숫자가 두자릿수가 안 되면 0으로 채워주기
-         '${startTime.toString().padLeft(2, '0')}'
+         '${startTime.toString().padLeft(2, '0'):00}',
+         style: textStyle,
+        ),
+        Text(
+          
         )
       ],
     )
