@@ -26,7 +26,7 @@ Widget build(BuildContext context) {
             selectedDate: selectedDate, // 선택된 날짜 전달하가
 
             // 날짜가 선택됐을 때 실행할 함수
-            onDaySelected: OnDaySelected,
+            onDaySelected: onDaySelected,
           ),
         ],
       ),
