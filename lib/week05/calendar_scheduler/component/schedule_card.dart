@@ -15,7 +15,13 @@ class ScheduleCard extends StatelessWidget{
   @override
   Widget build(BuildContext context) {
     return Container(
-      
+      decoration: BoxDecoration(
+        border: Border.all(
+          width: 1.0,
+          color: PRIMARY_COLOR,
+        ),
+        
+      ),
     )
 }
 class _Time extends StatelessWidget{
