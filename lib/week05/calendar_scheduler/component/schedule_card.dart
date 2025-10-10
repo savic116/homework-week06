@@ -20,8 +20,23 @@ class ScheduleCard extends StatelessWidget{
           width: 1.0,
           color: PRIMARY_COLOR,
         ),
-        
+        borderRadius: BorderRadius.circular(8.0),
       ),
+      child:  Padding(
+        padding: const EdgeInsets.all(16.0),
+        child: IntrinsicHeight(
+          child:  Row(
+            crossAxisAlignment: CrossAxisAlignment.stretch,
+            children: [
+              _Time( // 시작과 종료 시간을 보여줄 위젯
+                startTime: startTime,
+                endTime: endTime,
+
+              ),
+            ],
+          ),
+        ),
+      )
     )
 }
 class _Time extends StatelessWidget{
