@@ -37,5 +37,7 @@ Widget build(BuildContext context) {
 
 void onDaySelected(DateTime selectedDate, DateTime focusedDay){
   // 날짜 선택될 때마다 실행할 함수
-  setState
+  setState((){
+    this.selectedDate = selectedDate;
+  });
 }
