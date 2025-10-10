@@ -50,7 +50,10 @@ class _Content extends StatelessWidget{
 
   @override
   Widget build(BuildContext context) {
-    // TODO: implement build
-    throw UnimplementedError();
+    return Expanded(
+      child: Text(
+        content,
+      ),
+    );
   }
 }
