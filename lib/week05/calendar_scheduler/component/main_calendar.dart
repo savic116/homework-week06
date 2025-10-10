@@ -9,10 +9,11 @@ class MainCalendar extends StatelessWidget{
   MainCalendar({
     required this.onDaySelected,
     required this.selectedDate,
-  })
+  });
   @override
   Widget build(BuildContext context) {
     return TableCalendar(
+      onDaySelected: onDaySelected,
       firstDay: DateTime(1800, 1, 1), // 첫째 날
       lastDay: DateTime(3000, 1, 1),
       focusedDay: DateTime.now(),
