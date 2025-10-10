@@ -4,7 +4,10 @@ import 'package:table_calender/table_calender.dart';
 class MainCalendar extends StatelessWidget{
   @override
   Widget build(BuildContext context) {
-    // TODO: implement build
-    throw UnimplementedError();
+    return TableCalendar(
+      firstDay: DateTime(1800, 1, 1), // 첫째 날
+      lastDay: DateTime(3000, 1, 1),
+      focusedDay: DateTime.now(),
+    );
   }
 }
