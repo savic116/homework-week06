@@ -7,16 +7,11 @@ class HomeScreen extends StatefulWidget{
   @override
   State<HomeScreen> createState() => _HomeScreenState();
 }
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      body: SafeArea(
-        child: Column(
-          children: [
-            MainCalendar(),
-          ],
-        ),
-      ),
-    );
-  }
-}
+ class _HomeScreenState extends State<HomeScreen> {
+  DateTime selectedDate = DateTime.utc(
+    DateTime.now().year,
+    DateTime.now().month,
+    DateTime.now().day,
+
+  );
+ }
