@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:myapp/week05/calendar_scheduler/component/main_calendar.dart';
+import 'package:table_calendar/table_calendar.dart';
 
 class HomeScreen extends StatefulWidget{
   const HomeScreen({Key? key}) : super (key: key);
@@ -21,7 +22,14 @@ Widget build(BuildContext context) {
   return Scaffold(
     body: SafeArea(
       child: Column(
-        
+        children: [
+          MainCalendar(
+            selectedDate: selectedDate, // 선택된 날짜 전달하가
+
+            // 날짜가 선택됐을 때 실행할 함수
+            onDaySelected: OnDaySelected,
+          )
+        ],
       )
     )
   )
