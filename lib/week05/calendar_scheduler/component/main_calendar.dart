@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:myapp/week05/calendar_scheduler/const/colors.dart';
 import 'package:table_calendar/table_calendar.dart';
 
 class MainCalendar extends StatelessWidget{
@@ -18,7 +19,18 @@ class MainCalendar extends StatelessWidget{
       ),
       calendarStyle: CalendarStyle(
         isTodayHighlighted: false,
-        
+        defaultDecoration: BoxDecoration(
+          borderRadius: BorderRadius.circular(6.0),
+          color: LIGHT_GREY_COLOR,
+        ),
+        weekendDecoration: BoxDecoration(
+          borderRadius: BorderRadius.circular(6.0),
+          color: LIGHT_GREY_COLOR,
+        ),
+        selectedDecoration: BoxDecoration(
+          borderRadius: BorderRadius.circular(6.0),
+        )
+
 
       )
     );
