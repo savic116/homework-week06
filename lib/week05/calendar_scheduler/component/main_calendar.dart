@@ -9,7 +9,11 @@ class MainCalendar extends StatelessWidget{
       lastDay: DateTime(3000, 1, 1),
       focusedDay: DateTime.now(),
       headerStyle: HeaderStyle(
-        
+        titleCentered: true,
+        formatButtonVisible: false,
+        titleTextStyle: TextStyle(
+          
+        )
       )
     );
   }
