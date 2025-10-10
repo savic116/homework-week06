@@ -14,6 +14,10 @@ class MainCalendar extends StatelessWidget{
   Widget build(BuildContext context) {
     return TableCalendar(
       onDaySelected: onDaySelected,
+      selectedDayPredicate: (date) =>
+        date.year == selectedDate.year &&
+        date.month == selectedDate.month &&
+        date.day == selectedDate.day,
       firstDay: DateTime(1800, 1, 1), // 첫째 날
       lastDay: DateTime(3000, 1, 1),
       focusedDay: DateTime.now(),
