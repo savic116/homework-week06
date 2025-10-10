@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:table_calender/table_calender.dart';
+import 'package:table_calendar/table_calendar.dart';
 
 class MainCalendar extends StatelessWidget{
   @override
@@ -18,7 +18,7 @@ class MainCalendar extends StatelessWidget{
       ),
       calendarStyle: CalendarStyle(
         isTodayHighlighted: false,
-        
+
       )
     );
   }
