@@ -15,7 +15,6 @@ class _HomeScreenState extends State<HomeScreen> {
     DateTime.now().day,
 
   );
-}
 
 @override
 Widget build(BuildContext context) {
@@ -40,4 +39,5 @@ void onDaySelected(DateTime selectedDate, DateTime focusedDay){
   setState((){
     this.selectedDate = selectedDate;
   });
+}
 }
