@@ -26,7 +26,11 @@ Widget build(BuildContext context) {
     floatingActionButton: FloatingActionButton(
       backgroundColor: PRIMARY_COLOR,
       onPressed: () {
-        show
+        showModalBottomSheet(
+          context: context,
+          isDismissible: true,
+          builder: (_) => ScheduleBottomSheet(),
+        );
       },
     )
     body: SafeArea(
