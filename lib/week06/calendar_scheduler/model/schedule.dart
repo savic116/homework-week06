@@ -1,1 +1,5 @@
-import ''
+
+
+class Schedules extends Table{
+  In
+}
