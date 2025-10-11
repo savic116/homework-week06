@@ -120,8 +120,8 @@ String? contentValidator(String? val) {
 }
 
 void onSavePressed(){
-  if(formKey.currenState!.validate()){
-    formKey.currenState!.save();
+  if(formKey.currentState!.validate()){
+    formKey.currentState!.save();
 
     print(startTime);
     print(endTime);
