@@ -21,5 +21,6 @@ class LocalDatabase extends _$LocalDatabase {
   Future<int> removeSchedule(int id) =>
   (delete(schedules)..where((tbl) => tbl.id.equals(id))).go();
 
-  
+  @override
+  int get schemaVersion => 1;
 }
