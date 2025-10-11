@@ -30,6 +30,9 @@ Widget build(BuildContext context) {
           context: context,
           isDismissible: true,
           builder: (_) => ScheduleBottomSheet(),
+          // BottomSheet의 높이를 화면의 최대 높이로
+          // 정의하고 스크롤 가능하게 변경
+          isScrollControlled: true,
         );
       },
       child: Icon(
