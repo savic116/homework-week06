@@ -19,5 +19,5 @@ class LocalDatabase extends _$LocalDatabase {
    into(Schedules).insert(data);
   
   Future<int> removeSchedule(int id) =>
-  ()
+  (delete(schedules))
 }
