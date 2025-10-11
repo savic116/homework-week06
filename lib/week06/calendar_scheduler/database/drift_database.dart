@@ -13,5 +13,5 @@ class LocalDatabase extends _$LocalDatabase {
   // code generation으로 생성할 클래스 상속
   Stream<List<Schedules>> watchSchedules(DateTime data) =>
   // 데이터를 조회하고 변화 감지
-     (select(Schedules)..where((tbl) => tbl.data.equals(data))).watch();
+     (select(schedules)..where((tbl) => tbl.data.equals(data))).watch();
 }
