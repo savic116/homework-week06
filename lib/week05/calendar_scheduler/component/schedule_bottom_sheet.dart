@@ -50,13 +50,14 @@ class _ScheduleBottomSheetState extends State<ScheduleBottomSheet>{
                   onPressed: onSavePressed,
                   style: ElevatedButton.styleFrom(
                     foregroundColor: Colors.white,
-                    backgroundColor: 
-                  )
-                )
-              )
+                    backgroundColor: PRIMARY_COLOR,
+                  ),
+                  child: Text('저장'),
+                ),
+              ),
             ],
-          )
-        )
+          ),
+        ),
         child: CustomTextField(
           // 시작 시간 텍스트 필드 렌더링
           label: '시작 시간',
