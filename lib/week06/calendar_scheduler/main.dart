@@ -1,3 +1,4 @@
+import 'package:get_it/get_it.dart';
 import 'package:myapp/week05/calendar_scheduler/screen/home_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:intl/date_symbol_data_local.dart';
@@ -9,6 +10,10 @@ void main() async {
   WidgetsFlutterBinding.ensureInitialized();
 
   await initializeDateFormatting(); // intl 패키지 초기화(다국어화)
+
+  final database = LocalDatabase();
+
+  GetIt.I.re
 
   runApp(
     MaterialApp(
