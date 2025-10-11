@@ -37,7 +37,8 @@ class _ScheduleBottomSheetState extends State<ScheduleBottomSheet>{
                         onSaved: (String? val) {
                           // 저장이 실행되면 startTime 변수에 텍스트 필드값 저장
                           startTime = int.parse(val!);
-                        }
+                        },
+                        validator: timeValidator,
                       ),
                     ),
                     const SizedBox(width: 16.0),
