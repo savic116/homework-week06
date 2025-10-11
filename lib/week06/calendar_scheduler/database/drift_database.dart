@@ -22,7 +22,7 @@ class LocalDatabase extends _$LocalDatabase {
      (select(schedules)..where((tbl) => tbl.date.equals(date))).watch();
   
   Future<int> createSchedule(SchedulesCompanion data) =>
-   into(Schedules).insert(data);
+   into(schedules).insert(data);
   
   Future<int> removeSchedule(int id) =>
   (delete(schedules)..where((tbl) => tbl.id.equals(id))).go();
