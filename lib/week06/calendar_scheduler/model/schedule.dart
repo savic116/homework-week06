@@ -5,6 +5,5 @@ class Schedules extends Table{
   TextColumn get contnet => text()();
   DateTimeColumn get date => dateTime()();
   IntColumn get startTime => integer()();
-  I
-
+  IntColumn get endTime => integer()();
 }
