@@ -15,6 +15,7 @@ part 'drift_database.g.dart'; // part 파일 지정
   ],
 )
 class LocalDatabase extends _$LocalDatabase {
+  LocalDatabase() :super(_openConnection());
   // code generation으로 생성할 클래스 상속
   Stream<List<Schedules>> watchSchedules(DateTime date) =>
   // 데이터를 조회하고 변화 감지
