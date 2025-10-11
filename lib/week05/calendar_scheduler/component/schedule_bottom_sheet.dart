@@ -4,8 +4,5 @@ class ScheduleBottomSheet extends StatefulWidget{
   const ScheduleBottomSheet({Key? key}) : super(key: key);
 
   @override
-  StatefulElement createElement() {
-    // TODO: implement createElement
-    return super.createElement();
-  }
+  State<ScheduleBottomSheet> createState() => _ScheduleBottomSheetState();
 }
