@@ -90,6 +90,16 @@ class _ScheduleBottomSheetState extends State<ScheduleBottomSheet>{
       String? contentValidator(String? val){}
 
     }
+
+  void onSavePressed(){
+  if(formKey.currentState!.validate()){
+    formKey.currentState!.save();
+
+    print(startTime);
+    print(endTime);
+    print(content);
+  }
+ }
 }
 
 String? timeValidator(String? val) {
@@ -119,12 +129,3 @@ String? contentValidator(String? val) {
   return null;
 }
 
-void onSavePressed(){
-  if(formKey.currentState!.validate()){
-    formKey.currentState!.save();
-
-    print(startTime);
-    print(endTime);
-    print(content);
-  }
-}
