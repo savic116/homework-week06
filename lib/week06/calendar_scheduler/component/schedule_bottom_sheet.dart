@@ -104,7 +104,9 @@ class _ScheduleBottomSheetState extends State<ScheduleBottomSheet>{
         return null;
       }
 
-      String? contentValidator(String? val){}
+      String? contentValidator(String? val){
+        
+      }
       if(formKey.currentState!.validate()){
         formKey.currentState!.save();
 
