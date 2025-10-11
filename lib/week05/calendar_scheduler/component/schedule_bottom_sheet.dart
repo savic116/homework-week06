@@ -15,6 +15,9 @@ class _ScheduleBottomSheetState extends State<ScheduleBottomSheet>{
       child: Container(
         height: MediaQuery.of(context).size.height / 2,
         color: Colors.white,
+        child: Padding(
+          padding: const Ed,
+        )
         child: CustomTextField(
           // 시작 시간 텍스트 필드 렌더링
           label: '시작 시간',
