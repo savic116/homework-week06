@@ -28,6 +28,11 @@ class CustomTextField extends StatelessWidget{
           child: TextFormField(
             cursorColor: Colors.grey,
             maxLines:  isTime ? 1 : null,
+            //시간 관련 텍스트 필드가 아니면 한 줄 이상 작성 가능
+            expands: !isTime,
+            keyboardType:  isTime ? TextInputType.number : TextInputType.multiline,
+            // 시간 관련 텍스트 필드는 기본 숫자 키보드 아니면 빌반 글자 키보드 보여주기
+            input
           ),
         ),
         TextFormField(), // 폼 안에서 텍스트 필드를 쓸 때 사용
