@@ -58,11 +58,10 @@ class _ScheduleBottomSheetState extends State<ScheduleBottomSheet>{
             ],
           ),
         ),
-        child: CustomTextField(
-          // 시작 시간 텍스트 필드 렌더링
-          label: '시작 시간',
-        ),
       ),
     );
+  }
+  void onSavePressed(){
+
   }
 }
