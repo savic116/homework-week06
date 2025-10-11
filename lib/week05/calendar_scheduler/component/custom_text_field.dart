@@ -37,7 +37,12 @@ class CustomTextField extends StatelessWidget{
                 FilteringTextInputFormatter.digitsOnly,
                ]
                  : [], 
-                
+               decoration: InputDecoration(
+                border: InputBorder.none,
+                filled: true,
+                fillColor: Colors.grey[300],
+                suffixText: isTime ? '시' : null,
+               ),
           ),
         ),
         TextFormField(), // 폼 안에서 텍스트 필드를 쓸 때 사용
