@@ -30,6 +30,12 @@ Widget build(BuildContext context) {
             // 날짜가 선택됐을 때 실행할 함수
             onDaySelected: onDaySelected,
           ),
+          SizedBox(height: 8.0),
+          TodayBanner(
+            selectedDate: selectedDate,
+            count: 0,
+          ),
+          
           ScheduleCard(
             startTime: 12,
             endTime: 14,
