@@ -20,7 +20,14 @@ class _ScheduleBottomSheetState extends State<ScheduleBottomSheet>{
           child: Column(
             children: [
               Row(
-                Row(children: [],)
+                children: [
+                  Expanded(
+                    child: CustomTextField(
+                      label: '시작 시간',
+                      isTime: true,
+                    )
+                  )
+                ],
               )
             ],
           )
