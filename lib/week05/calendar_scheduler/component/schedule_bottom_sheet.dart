@@ -17,7 +17,13 @@ class _ScheduleBottomSheetState extends State<ScheduleBottomSheet>{
         color: Colors.white,
         child: Padding(
           padding: const EdgeInsets.only(left: 8, right: 8, top: 8),
-          
+          child: Column(
+            children: [
+              Row(
+                Row(children: [],)
+              )
+            ],
+          )
         )
         child: CustomTextField(
           // 시작 시간 텍스트 필드 렌더링
