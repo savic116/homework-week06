@@ -32,7 +32,10 @@ Widget build(BuildContext context) {
           builder: (_) => ScheduleBottomSheet(),
         );
       },
-    )
+      child: Icon(
+        Icons.add,
+      ),
+    ),
     body: SafeArea(
       child: Column(
         children: [
