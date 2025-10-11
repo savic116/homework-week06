@@ -60,9 +60,9 @@ class _ScheduleBottomSheetState extends State<ScheduleBottomSheet>{
                     label: '내용',
                     isTime: false,
                     onSaved: (String? val) {
-                          endTime = int.parse(val!);
-                        },
-                        validator: timeValidator,
+                          content = val;
+                    },
+                    validator: timeValidator,
                   ),
                 ),
                 SizedBox(
