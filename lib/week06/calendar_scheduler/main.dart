@@ -13,7 +13,7 @@ void main() async {
 
   final database = LocalDatabase();
 
-  GetIt.I.re
+  GetIt.I.registerSingleton<LocalDatabase> database;
 
   runApp(
     MaterialApp(
