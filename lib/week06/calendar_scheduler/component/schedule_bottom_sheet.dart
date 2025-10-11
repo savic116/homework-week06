@@ -105,7 +105,12 @@ class _ScheduleBottomSheetState extends State<ScheduleBottomSheet>{
       }
 
       String? contentValidator(String? val){
-        
+        if(val == null || val.length == 0){
+            return '값을 입력해주세요';
+          }
+
+        return null;
+
       }
       if(formKey.currentState!.validate()){
         formKey.currentState!.save();
@@ -118,15 +123,5 @@ class _ScheduleBottomSheetState extends State<ScheduleBottomSheet>{
     }
 }
 
-String? timeValidator(String? val) {
-  
-}
 
-String? contentValidator(String? val) {
-  if(val == null || val.length == 0){
-    return '값을 입력해주세요';
-  }
-
-  return null;
-}
 
