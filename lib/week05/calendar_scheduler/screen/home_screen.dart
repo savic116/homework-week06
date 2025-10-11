@@ -35,7 +35,7 @@ Widget build(BuildContext context) {
             selectedDate: selectedDate,
             count: 0,
           ),
-          
+          SizedBox(height: 8.0,),
           ScheduleCard(
             startTime: 12,
             endTime: 14,
