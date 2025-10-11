@@ -5,7 +5,7 @@ class CustomTextField extends StatelessWidget{
   final String label; // 텍스트 필드 제목
   final bool isTime; // 시간 선택하는 텍스트 필드인지 여부
   final FormFieldSetter<String> onSaved;
-  final
+  final Form
 
   const CustomTextField({
     required this.label,
