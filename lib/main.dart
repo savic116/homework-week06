@@ -11,9 +11,9 @@ void main() async {
 
   await initializeDateFormatting(); // intl 패키지 초기화(다국어화)
 
-  final database = LocalDatabase();
+  final database = LocalDatabase(); // db 변수 생성
 
-  GetIt.I.registerSingleton<LocalDatabase>(database); // 전역객체로 db 생성. 이러면 파일마다 객체생성 필요 x
+  GetIt.I.registerSingleton<LocalDatabase>(database); // 생성된 db변수를 전역객체로 선언. 이러면 파일마다 객체생성 필요 x
 
   runApp(
     MaterialApp(
