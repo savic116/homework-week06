@@ -83,7 +83,7 @@ class _ScheduleBottomSheetState extends State<ScheduleBottomSheet>{
         ),
       ),
      ); 
-    }
+}
     void onSavePressed(){
       String? timeValidator(String? val) {
               if(val == null){
