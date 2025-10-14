@@ -13,7 +13,7 @@ void main() async {
 
   final database = LocalDatabase();
 
-  GetIt.I.registerSingleton<LocalDatabase>(database);
+  GetIt.I.registerSingleton<LocalDatabase>(database); // 전역객체로 db 생성. 이러면 파일마다 객체생성 필요 x
 
   runApp(
     MaterialApp(
