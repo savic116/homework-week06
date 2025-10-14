@@ -101,7 +101,7 @@ class _ScheduleBottomSheetState extends State<ScheduleBottomSheet>{
         if (number < 0 || number > 24) {
           return '0시부터 24시 사이를 입력해주세요';
         }
-        return null;
+        return null; // null을 반환해야 하는게 규칙?
       }
 
       String? contentValidator(String? val){
