@@ -120,7 +120,6 @@ class _ScheduleBottomSheetState extends State<ScheduleBottomSheet>{
       }
 
     }
-}
 
 String? timeValidator(String? val) {
   if(val == null){
