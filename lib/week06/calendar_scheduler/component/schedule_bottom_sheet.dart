@@ -127,7 +127,7 @@ String? contentValidator(String? val) {
         awit GetIt.I<LocalDatabase>().createState(
           SchedulesCompanion(
             startTime: Value(startTime!),
-          )
+          ),
         )
       }
 
