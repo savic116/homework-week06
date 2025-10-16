@@ -28,7 +28,7 @@ class LocalDatabase extends _$LocalDatabase {
   (delete(schedules)..where((tbl) => tbl.id.equals(id))).go();
 
   @override
-  int get schemaVersion => 1;
+  int get schemaVersion => 2;
 }
 
 LazyDatabase _openConnection(){
