@@ -59,7 +59,12 @@ Widget build(BuildContext context) {
           SizedBox(height: 8.0,),
           Expanded(
             child: StreamBuilder<List><Schedule>>(
-              stream: GetIt.I<LocalDatabase>().watchSchedules
+              stream: GetIt.I<LocalDatabase>().watchSchedules(selectedDate),
+              builder: (context, snapshot){
+                if(!snapshot.hasData){
+                  return Container();
+                }
+              }
             ),
           )
           ScheduleCard(
