@@ -66,7 +66,7 @@ Widget build(BuildContext context) {
                 }
                 return ListView.builder(
                   // 리스트에 입력할 값들의 총 개수
-                  itemCount: snapshot.daya!.length,
+                  itemCount: snapshot.data!.length,
                   itemBuilder: (context, index) {
                     final schedule = snapshot.data![index];
                     return Padding(
