@@ -124,9 +124,11 @@ String? contentValidator(String? val) {
       if(formKey.currentState!.validate()){
         formKey.currentState!.save();
 
-        print(startTime);
-        print(endTime);
-        print(content);
+        awit GetIt.I<LocalDatabase>().createState(
+          SchedulesCompanion(
+            startTime: Value(startTime!),
+          )
+        )
       }
 
     }
