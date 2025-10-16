@@ -133,7 +133,7 @@ String? contentValidator(String? val) {
           ),
         );
 
-        Na
+        Navigator.of(context).pop();
       }
 
     }
