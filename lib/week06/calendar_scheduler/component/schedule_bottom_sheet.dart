@@ -130,7 +130,7 @@ String? contentValidator(String? val) {
           SchedulesCompanion(
             startTime: Value(startTime!),
             endTime: Value(endTime!),
-            contnet: Value(content!),
+            content: Value(content!),
             date: Value(widget.selectedDate),
           ),
         );
