@@ -74,8 +74,9 @@ Widget build(BuildContext context) {
                       key: ObjectKey(schedule,id),
                       direction: DismissDirection.startToEnd,
                       onDismissed: (DismissAction direction){
-                        GetIt.I<LocalDatabase>()
-                      }
+                        GetIt.I<LocalDatabase>().removeSchedule(schedule.id);
+                      },
+                      
                     )
                     return Padding(
                       padding: const EdgeInsets.only(bottom: 8.0, left: 8.0, right:  8.0),
