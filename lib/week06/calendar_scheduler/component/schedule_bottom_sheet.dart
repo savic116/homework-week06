@@ -133,7 +133,7 @@ String? contentValidator(String? val) {
           ),
         );
 
-        Navigator.of(context).pop();
+        Navigator.of(context).pop(); // 일정 생성 후 화면 뒤로가기
       }
 
     }
