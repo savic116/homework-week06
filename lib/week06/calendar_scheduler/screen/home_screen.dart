@@ -69,6 +69,14 @@ Widget build(BuildContext context) {
                   itemCount: snapshot.data!.length,
                   itemBuilder: (context, index) {
                     final schedule = snapshot.data![index];
+
+                    return Dismissible(
+                      key: ObjectKey(schedule,id),
+                      direction: DismissDirection.startToEnd,
+                      onDismissed: (DismissAction direction){
+                        GetIt.I<LocalDatabase>()
+                      }
+                    )
                     return Padding(
                       padding: const EdgeInsets.only(bottom: 8.0, left: 8.0, right:  8.0),
                       child: ScheduleCard(
