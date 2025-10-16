@@ -125,7 +125,7 @@ String? contentValidator(String? val) {
       if(formKey.currentState!.validate()){
         formKey.currentState!.save();
 
-        await GetIt.I<LocalDatabase>().createState(
+        await GetIt.I<LocalDatabase>().createSchedule(
           SchedulesCompanion(
             startTime: Value(startTime!),
             endTime: Value(endTime!),
