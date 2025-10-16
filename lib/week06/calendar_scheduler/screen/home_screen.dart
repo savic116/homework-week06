@@ -77,12 +77,13 @@ Widget build(BuildContext context) {
                         GetIt.I<LocalDatabase>().removeSchedule(schedule.id);
                       },
                       child:  Padding(
-                      padding: const EdgeInsets.only(bottom: 8.0, left: 8.0, right:  8.0),
-                      child: ScheduleCard(
-                        startTime: schedule.startTime,
-                        endTime: schedule.endTime,
-                        content: schedule.content,
-                      ),
+                              padding: const EdgeInsets.only(bottom: 8.0, left: 8.0, right:  8.0),
+                              child: ScheduleCard(
+                                startTime: schedule.startTime,
+                                endTime: schedule.endTime,
+                                content: schedule.content,
+                              ),
+                    ),
                     );
                   },
                 );
