@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:myapp/week06/calendar_scheduler/component/custom_text_field.dart';
 import 'package:myapp/week06/calendar_scheduler/const/colors.dart';
 import 'package:myapp/week06/calendar_scheduler/database/drift_database.dart';
+import 'package:drift/drift.dart';
 import 'package:get_it/get_it.dart';
 class ScheduleBottomSheet extends StatefulWidget{
   final DateTime selectedDate;  // 선택된 날짜 상위 위젯
