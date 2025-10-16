@@ -71,9 +71,9 @@ Widget build(BuildContext context) {
                     final schedule = snapshot.data![index];
 
                     return Dismissible(
-                      key: ObjectKey(schedule,id),
+                      key: ObjectKey(schedule.id),
                       direction: DismissDirection.startToEnd,
-                      onDismissed: (DismissAction direction){
+                      onDismissed: (DismissDirection direction){
                         GetIt.I<LocalDatabase>().removeSchedule(schedule.id);
                       },
                       child:  Padding(
